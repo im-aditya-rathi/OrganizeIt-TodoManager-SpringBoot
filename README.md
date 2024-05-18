@@ -1,2 +1,2 @@
 # Todo-Manager
-Manage Todo with REST APIs
+Manage Todo with REST APIs (Spring Boot project)
