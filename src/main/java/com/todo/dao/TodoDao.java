@@ -1,10 +1,12 @@
 package com.todo.dao;
 
+import com.todo.exceptions.ResouceNotFoundException;
 import com.todo.helper.Helper;
 import com.todo.models.Todo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -57,7 +59,12 @@ public class TodoDao {
 //        Map<String, Object> todoData = jdbcTemplate.queryForMap(query, id);
 //        Todo todo = Helper.generateTodoFromDaoMap(todoData);
 
-        Todo todo = jdbcTemplate.queryForObject(query, new TodoRowMapper(), id);
+        Todo todo;
+        try {
+            todo = jdbcTemplate.queryForObject(query, new TodoRowMapper(), id);
+        } catch (Exception e) {
+            throw  new ResouceNotFoundException("Data not found with requested ID", HttpStatus.NOT_FOUND);
+        }
 
         logger.info("Todo fetched from db: {}",todo);
         return todo;
@@ -78,8 +85,12 @@ public class TodoDao {
     public Todo updateTodo(int id, Todo newTodo) {
 
         String query = "update todos set title=?, content=?, status=?, todoDate=? where id=?";
-        int update = jdbcTemplate.update(query, newTodo.getTitle(), newTodo.getContent(), newTodo.getStatus(),
-                        newTodo.getTodoDate(), id);
+        int update;
+        try {
+            update = jdbcTemplate.update(query, newTodo.getTitle(), newTodo.getContent(), newTodo.getStatus(), newTodo.getTodoDate(), id);
+        } catch (Exception e) {
+            throw  new ResouceNotFoundException("Data not found with requested ID", HttpStatus.NOT_FOUND);
+        }
 
         logger.info("UPDATED: {}", update);
 
@@ -91,6 +102,9 @@ public class TodoDao {
         String query = "delete from todos where id = ?";
         int delete =  jdbcTemplate.update(query, id);
 
+        if(delete == 0) {
+            throw new ResouceNotFoundException("Data not found with requested ID", HttpStatus.NOT_FOUND);
+        }
         logger.info("DELETED: {}", delete);
     }
 
