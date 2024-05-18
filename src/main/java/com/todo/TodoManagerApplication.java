@@ -22,15 +22,6 @@ public class TodoManagerApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-//		//create todo
-//		Todo todo = new Todo();
-//		todo.setId(124);
-//		todo.setTitle("C++");
-//		todo.setContent("programming language");
-//		todo.setStatus("done");
-//		todo.setAddDate(new Date());
-//		todo.setTodoDate(new Date());
-//
-//		todoDao.saveTodo(todo);
+		// Test here for non-static objects
 	}
 }

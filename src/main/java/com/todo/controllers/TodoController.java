@@ -34,7 +34,7 @@ public class TodoController {
         Date currentDate = new Date();
         todo.setAddDate(currentDate);
         logger.info("current date: {}",currentDate);
-        logger.info("todo date: {}",todo.getTodoDate());
+        logger.info("Json todo date: {}",todo.getTodoDate());
 
         Todo todo1 = todoService.createTodo(todo);
 //        ResponseEntity responseEntity = new ResponseEntity(todo1, HttpStatus.CREATED);
