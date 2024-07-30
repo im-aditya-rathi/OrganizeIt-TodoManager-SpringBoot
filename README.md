@@ -1,11 +1,23 @@
-# Todo-Manager
-Manage Todo with REST APIs (Spring Boot project)
-* Using in-Memory
-* Using JDBC MySQL
-* Using Hibenate
+# Organize It
+
+## Overview
+OrganizeIt is a Todo Manager application built using Spring Boot. The application demonstrates three different methods for data storage:
+1. Hibernate (used as Primary)
+2. Spring JDBC
+3. In-memory using data structures
+
+Additionally, the application includes global exception handling, a logging mechanism, and follows a three-layer architecture to ensure the code is maintainable and understandable.
+
+## Features
+- **In-Memory Data Storage**: Quick and easy setup for testing and development purposes.
+- **Spring JDBC**: Demonstrates how to interact with a relational database using Spring's JDBC support.
+- **Hibernate**: Uses Hibernate ORM for database interactions, leveraging JPA annotations.
+- **Global Exception Handling**: Centralized exception handling using `@ControllerAdvice`.
+- **Logging**: Integrated logging using SLF4J.
+- **Three-Layer Architecture**: Follows a clear separation of concerns with Controller, Service, and Repository layers.
+
 
 <hr>
-
 <!-- Screenshots lists -->
 
 ## Screenshots
