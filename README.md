@@ -12,67 +12,85 @@ Manage Todo with REST APIs (Spring Boot project)
 
 ### 1.) Success Response:
 
-* #### Create Todo
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/1.png" alt="Create Todo"/>
-</p></kbd></table>
+<table>
+  <tr>
+    <td><h4>Create Todo</h4></td>
+    <td><h4>Get Todo</h4></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/1.png" alt="Create Todo"/></kbd>
+    </td>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/2.png" alt="Get Todo"/></kbd>
+    </td>
+  </tr>
+</table>
 
 <br>
 
-* #### Get Todo
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/2.png" alt="Get Todo"/>
-</p></kbd></table>
+<table>
+  <tr>
+    <td><h4>Update Todo</h4></td>
+    <td><h4>Get All Todos</h4></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/3.png" alt="Update Todo"/></kbd>
+    </td>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/4.png" alt="Get All Todos"/></kbd>
+    </td>
+  </tr>
+</table>
 
 <br>
 
-* #### Update Todo
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/3.png" alt="Update Todo"/>
-</p></kbd></table>
-
-<br>
-
-* #### Get All Todos
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/4.png" alt="Get All Todos"/>
-</p></kbd></table>
-
-<br>
-
-* #### Delete Todo
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/5.png" alt="Delete Todo"/>
-</p></kbd></table>
-
-<br>
-
-* #### Get All Todos (checking again after deleting todo)
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/6.png" alt="Get All Todos (checking again after deleting todo)"/>
-</p></kbd></table>
+<table>
+  <tr>
+    <td><h4>Delete Todo</h4></td>
+    <td><h4>Get All Todos (checking again after deleting todo)</h4></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/5.png" alt="Delete Todo"/></kbd>
+    </td>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/6.png" alt="Get All Todos (checking again after deleting todo)"/></kbd>
+    </td>
+  </tr>
+</table>
 
 <br><br>
 
 ### 2.) Bad Response [Exception Handling]:
 
-* #### Get Todo (with wrong todo id)
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_1.png" alt="Get Todo (with wrong todo id)"/>
-</p></kbd></table>
+<table>
+  <tr>
+    <td><h4>Get Todo (with wrong todo id)</h4></td>
+    <td><h4>Update Todo (with wrong todo id)</h4></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_1.png" alt="Get Todo (with wrong todo id)"/></kbd>
+    </td>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_2.png" alt="Update Todo (with wrong todo id)"/></kbd>
+    </td>
+  </tr>
+</table>
 
 <br>
 
-* #### Update Todo (with wrong todo id)
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_2.png" alt="Update Todo (with wrong todo id)"/>
-</p></kbd></table>
-
-<br>
-
-* #### Delete Todo (with wrong todo id)
-<table><kbd><p align="center">
-    <img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_3.png" alt="Delete Todo (with wrong todo id)"/>
-</p></kbd></table>
+<table>
+  <tr>
+    <td><h4>Delete Todo (with wrong todo id)</h4></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <kbd><img src="https://github.com/im-aditya-rathi/Todo-Manager/blob/master/src/main/resources/screenshots/0_Exception_Handling_3.png" alt="Delete Todo (with wrong todo id)"/></kbd>
+    </td>
+  </tr>
+</table>
 
 <hr>
