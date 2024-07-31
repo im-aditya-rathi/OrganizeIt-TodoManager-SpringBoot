@@ -1,4 +1,4 @@
-# Organize It
+# Organize It - [Todo Manager]
 
 ## Overview
 OrganizeIt is a Todo Manager application built using Spring Boot. The application demonstrates three different methods for data storage:
