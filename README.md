@@ -16,6 +16,13 @@ Additionally, the application includes global exception handling, a logging mech
 - **Logging**: Integrated logging using SLF4J.
 - **Three-Layer Architecture**: Follows a clear separation of concerns with Controller, Service, and Repository layers.
 
+## Endpoints Exposed
+- `GET /todos` : Retrieve all todos
+- `GET /todos/{id}` : Retrieve a single todo by ID
+- `POST /todos` : Create a new todo
+- `PUT /todos/{id}` : Update an existing todo
+- `DELETE /todos/{id}` : Delete a todo by ID
+
 
 <hr>
 <!-- Screenshots lists -->
